@@ -32,7 +32,7 @@ Mot de passe de l'utilisateur root de la BDD MySQL | rootpassword | Au choix (en
 
 2. 📄 Créer un fichier YAML    `mysql-configmap.yml`, ajoutez-y une ressource de type `ConfigMap` avec ces différentes clé/valeur :
 | Description | Key | Value |
-|-------------|-----|-------|
+|---|---|---|
 Votre utilisateur pour la BDD MySQL | user | Au choix |
 Schéma de la base de données | database | wordpress |
 
