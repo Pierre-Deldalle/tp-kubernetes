@@ -23,7 +23,7 @@ Les ressources Kubernetes concernant MySQL sont à déployer dans le namespace `
 1. 📄 Créer un fichier YAML          `mysql-secret.yml`, ajoutez-y une ressource de type `Secret` avec ces différentes clé/valeur :
 
 | Description | Key | Value |
-|-------------|-----|-------|
+|-|-|-|
 Mot de passe de votre utilisateur de la BDD MySQL | password | Au choix (encodé en base64) |
 Mot de passe de l'utilisateur root de la BDD MySQL | rootpassword | Au choix (encodé en base64) |
 
