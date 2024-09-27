@@ -20,19 +20,20 @@ Les fichiers YAML concernant MySQL sont à déposer dans le dossier `TP/database
 
 Les ressources Kubernetes concernant MySQL sont à déployer dans le namespace `database`.
 
-1. 📄 Créer un fichier YAML          `mysql-secret.yml`, ajoutez-y une ressource de type `Secret` avec ces différentes clé/valeur : 
+1. 📄 Créer un fichier YAML          `mysql-secret.yml`, ajoutez-y une ressource de type `Secret` avec ces différentes clé/valeur :
+
 | Description | Key | Value |
-|--|--|--|
-Mot de passe de votre utilisateur de la BDD MySQL| password | Au choix (encodé en base64) |
-Mot de passe de l'utilisateur root de la BDD MySQL| rootpassword | Au choix (encodé en base64) |
+|-------------|-----|-------|
+Mot de passe de votre utilisateur de la BDD MySQL | password | Au choix (encodé en base64) |
+Mot de passe de l'utilisateur root de la BDD MySQL | rootpassword | Au choix (encodé en base64) |
 
 *Depuis Linux :*
 > echo -n 'votre mot de passe' | base64
 
 2. 📄 Créer un fichier YAML    `mysql-configmap.yml`, ajoutez-y une ressource de type `ConfigMap` avec ces différentes clé/valeur :
 | Description | Key | Value |
-|--|--|--|
-Votre utilisateur pour la BDD MySQL| user | Au choix |
+|-------------|-----|-------|
+Votre utilisateur pour la BDD MySQL | user | Au choix |
 Schéma de la base de données | database | wordpress |
 
 3. 📄 Créer un fichier YAML nommé `mysql-statefulset.yml`. Dans ce fichier, définissez une ressource de type `StatefulSet` avec :
