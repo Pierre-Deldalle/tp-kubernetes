@@ -22,7 +22,7 @@
  - [ ] Tester kubectl :
 > kubectl version
 
-L'arborescence du projet avec quelques exemples est disponible dans le [dossier TP](https://gitlab.com/aurelienburet1/kubernetes/-/tree/main/TP?ref_type=heads)
+L'arborescence du projet avec quelques exemples est disponible dans le dossier "TP"
 
 *ChatGPT et autres outils sont autorisés, mais peu utiles. Le code YAML retourné peut inclure des objets Kubernetes non vus en cours pour le moment.*
 
@@ -79,6 +79,8 @@ Puis http://localhost:8080
 
 Résultat attendu : 
 ![resultat attendu](img/partie1-resultat-attendu.jpg)
+
+
 
 7. ❓ A quoi correspond les pointillés violet ? 
 ![question 7](img/partie1-question7.png)
