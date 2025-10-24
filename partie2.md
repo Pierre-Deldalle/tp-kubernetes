@@ -97,6 +97,15 @@ WORDPRESS_DB_PASSWORD = password
 
 - Monter la ressource PVC `wordpress-pvc` afin de stocker les données du blog Wordpress de façon persistante
 
+- les clés suivantes pour que Wordpress puisse répondre sur le même port : 
+
+```
+- name: WORDPRESS_CONFIG_EXTRA
+          value: |
+            define('WP_HOME','http://localhost:<votre_port_local>');
+            define('WP_SITEURL','http://localhost:<votre_port_local');
+```
+
 6. 📄 Créer un fichier YAML nommé `wordpress-service.yml`. Dans ce fichier, définissez une ressource de type `Service` qui écoutera sur le port `80` et redirigera les requêtes vers le port `80`des pods ayant le label `app: blog`
 
 7. 📸 Connexion au pod Wordpress et vérifier la présence des 4 variables d'environnement avec les valeurs définies
