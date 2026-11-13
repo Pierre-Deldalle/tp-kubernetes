@@ -1,0 +1,9 @@
+# ConfigMap contenant la configuration non sensible de MySQL
+# Pas de namespace dans les metadata : il est passé avec -n (database puis middle)
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-configmap
+data:
+  MYSQL_USER: wpuser
+  MYSQL_DATABASE: wordpress
